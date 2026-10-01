@@ -1,0 +1,1433 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEO — TÍTULO Y DESCRIPCIÓN QUE VE GOOGLE
+     Cambia "Capa Cero" por el nombre que elijas y "Puebla" si te mudas.
+     ═══════════════════════════════════════════════════════════════ -->
+<title>Capa Cero | Impresión 3D en Puebla — figuras, miniaturas y dioramas personalizados</title>
+<meta name="description" content="Taller de impresión 3D en Puebla: figuras personalizadas, miniaturas, dioramas, piezas para pintar, artículos masónicos, repuestos e impresión de archivos STL. Convertimos tu idea o fotografía en una pieza real.">
+<meta name="keywords" content="impresión 3D Puebla, figuras 3D Puebla, figuras personalizadas Puebla, dioramas 3D, figuras para pintar, impresión 3D personalizada, modelado 3D personalizado, figuras personalizadas, impresión de STL">
+<meta name="author" content="Capa Cero">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1B3FC4">
+<link rel="canonical" href="https://ejemplo.com/">
+
+<!-- Cómo se ve al compartir en Facebook, Instagram y WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Capa Cero">
+<meta property="og:title" content="Capa Cero | Impresión 3D en Puebla">
+<meta property="og:description" content="De una idea a una pieza real. Figuras, miniaturas, dioramas y piezas personalizadas hechas con impresión 3D en Puebla.">
+<meta property="og:url" content="https://ejemplo.com/">
+<meta property="og:image" content="https://ejemplo.com/portada.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Ícono de la pestaña del navegador (dibujado con código, no necesita archivo) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B3FC4'/%3E%3Cg fill='white'%3E%3Crect x='7' y='9' width='18' height='3' rx='1.5'/%3E%3Crect x='9' y='15' width='14' height='3' rx='1.5'/%3E%3Crect x='11' y='21' width='10' height='3' rx='1.5'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<!-- Ficha de negocio local para Google Maps y búsquedas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Capa Cero",
+  "description": "Taller de impresión 3D en Puebla: figuras personalizadas, miniaturas, dioramas, piezas para pintar e impresión de archivos STL.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Puebla", "addressRegion": "Puebla", "addressCountry": "MX" },
+  "areaServed": "Puebla, México",
+  "priceRange": "$$"
+}
+</script>
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   COLORES Y TIPOGRAFÍA
+   Si quieres cambiar el color principal, cambia --accent aquí abajo
+   (y también dentro del bloque de modo oscuro, más abajo).
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  --ground:#EFF1F5;
+  --surface:#FFFFFF;
+  --surface-2:#E7EBF1;
+  --ink:#10141B;
+  --ink-2:#39424F;
+  --muted:#6B7686;
+  --line:#D6DCE5;
+  --line-2:#BAC3D0;
+  --accent:#1B3FC4;
+  --accent-ink:#FFFFFF;
+  --accent-soft:#E3E9FB;
+  --ember:#B96C12;
+  --ember-soft:#FAEEDC;
+  --shadow:0 1px 2px rgba(16,20,27,.06), 0 12px 32px -18px rgba(16,20,27,.35);
+  --r:4px;
+  --maxw:1160px;
+  --f-display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Public Sans","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0A0D13;
+    --surface:#121822;
+    --surface-2:#1A212D;
+    --ink:#E8ECF3;
+    --ink-2:#BAC3D0;
+    --muted:#8A94A4;
+    --line:#242C39;
+    --line-2:#37414F;
+    --accent:#7F9CFF;
+    --accent-ink:#0A0D13;
+    --accent-soft:#182242;
+    --ember:#EFA850;
+    --ember-soft:#2A2013;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 14px 36px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0A0D13;
+  --surface:#121822;
+  --surface-2:#1A212D;
+  --ink:#E8ECF3;
+  --ink-2:#BAC3D0;
+  --muted:#8A94A4;
+  --line:#242C39;
+  --line-2:#37414F;
+  --accent:#7F9CFF;
+  --accent-ink:#0A0D13;
+  --accent-soft:#182242;
+  --ember:#EFA850;
+  --ember-soft:#2A2013;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 14px 36px -18px rgba(0,0,0,.8);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--f-body);font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding-inline:20px}
+section{padding-block:clamp(56px,7vw,96px)}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+/* Motivo de la marca: líneas de capa, como las que deja una impresora 3D */
+.layers{background-image:repeating-linear-gradient(to bottom,var(--line) 0 1px,transparent 1px 7px)}
+
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:800;line-height:1.08;letter-spacing:-.02em;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.75rem,3.4vw,2.6rem)}
+h3{font-size:1.15rem;letter-spacing:-.01em}
+p{margin:0}
+.lead{font-size:clamp(1.02rem,1.6vw,1.16rem);color:var(--ink-2);max-width:62ch}
+.eyebrow{
+  font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;
+  letter-spacing:.16em;color:var(--muted);display:flex;align-items:center;gap:10px;margin-bottom:14px;
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+.stack{display:flex;flex-direction:column;gap:14px}
+.stack-lg{display:flex;flex-direction:column;gap:28px}
+
+/* ── Botones ───────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:var(--f-body);font-weight:600;font-size:.95rem;line-height:1;
+  padding:14px 20px;border-radius:var(--r);border:1px solid transparent;
+  cursor:pointer;text-decoration:none;transition:transform .12s ease,background .15s ease,border-color .15s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-outline{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-outline:hover{border-color:var(--ink);background:var(--surface)}
+.btn-solid{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.btn-solid:hover{filter:brightness(1.15)}
+.btn-sm{padding:10px 14px;font-size:.86rem}
+.btn-wa{background:#128C7E;color:#fff;border-color:#128C7E}
+.btn-wa:hover{filter:brightness(1.1)}
+
+/* ── Encabezado ────────────────────────────────────────── */
+header.site{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:60;
+  background:color-mix(in srgb,var(--ground) 88%,transparent);
+  backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.navbar{display:flex;align-items:center;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);margin-right:auto}
+.brand-mark{width:34px;height:34px;flex:none;border-radius:6px;background:var(--accent);display:grid;place-items:center}
+.brand-mark svg{width:20px;height:20px}
+.brand-name{display:block;font-family:var(--f-display);font-weight:800;font-size:1.12rem;letter-spacing:-.02em;line-height:1.15;white-space:nowrap}
+.brand-sub{display:block;font-family:var(--f-mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);line-height:1.3;white-space:nowrap}
+nav.main{display:flex;gap:2px;align-items:center}
+nav.main a{
+  font-size:.88rem;font-weight:500;color:var(--ink-2);text-decoration:none;
+  padding:8px 10px;border-radius:var(--r);white-space:nowrap;
+}
+nav.main a:hover{color:var(--ink);background:var(--surface)}
+nav.main a.btn-primary{color:var(--accent-ink);background:var(--accent);padding:10px 15px;font-weight:600}
+nav.main a.btn-primary:hover{color:var(--accent-ink);background:var(--accent);filter:brightness(1.1)}
+.nav-toggle{display:none;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r);padding:9px 11px;cursor:pointer;color:var(--ink)}
+.nav-toggle svg{width:18px;height:18px;display:block}
+@media (max-width:1040px){
+  nav.main{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:var(--surface);border-bottom:1px solid var(--line);padding:8px 20px 16px;
+  }
+  nav.main.open{display:flex}
+  nav.main a{padding:12px 4px;border-bottom:1px solid var(--line)}
+  nav.main .btn{margin-top:12px}
+  .nav-toggle{display:block}
+  .navbar{position:relative}
+}
+.header-cta{display:inline-flex}
+@media (max-width:620px){ .header-cta{display:none} }
+
+/* ── Portada ───────────────────────────────────────────── */
+.hero{padding-block:clamp(44px,6vw,80px) clamp(52px,7vw,92px)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center}
+@media (max-width:900px){ .hero-grid{grid-template-columns:1fr} }
+.hero h1{font-size:clamp(2.35rem,6.2vw,4.1rem)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+.fact{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.fact b{color:var(--ink);font-weight:500}
+
+/* Panel de la portada: una pieza "creciendo" capa por capa */
+.plate{
+  position:relative;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r);padding:24px;box-shadow:var(--shadow);overflow:hidden;
+}
+.plate-head{display:flex;justify-content:space-between;align-items:center;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.plate-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ember);margin-right:7px;vertical-align:middle}
+.plate-stage{position:relative;aspect-ratio:4/3;display:grid;place-items:end center;background:
+  radial-gradient(circle at 1px 1px,var(--line) 1px,transparent 1px) 0 0/14px 14px;
+  border:1px dashed var(--line-2);border-radius:2px;padding:14px}
+.plate-stage svg{width:min(78%,300px);height:auto;overflow:visible}
+.plate-foot{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:18px}
+.plate-foot div{background:var(--surface);padding:11px 12px}
+.plate-foot span{display:block;font-family:var(--f-mono);font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.plate-foot b{font-family:var(--f-mono);font-size:.92rem;font-weight:500;color:var(--ink)}
+@keyframes rise{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
+.plate-stage .lyr{animation:rise .5s ease backwards}
+
+/* ── Catálogo ──────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin:26px 0 30px}
+.chip{
+  font-family:var(--f-mono);font-size:.76rem;letter-spacing:.05em;
+  padding:8px 13px;border:1px solid var(--line-2);background:transparent;color:var(--ink-2);
+  border-radius:100px;cursor:pointer;transition:.14s;
+}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--ground)}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{
+  display:flex;flex-direction:column;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+}
+.card:hover{border-color:var(--line-2)}
+.shot{
+  position:relative;aspect-ratio:4/3;display:grid;place-items:center;
+  background:var(--surface-2);
+  background-image:radial-gradient(circle at 1px 1px,var(--line-2) 1px,transparent 1px);
+  background-size:12px 12px;border-bottom:1px solid var(--line);
+}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot svg{width:58px;height:58px;color:var(--muted);opacity:.85}
+.shot-tag{
+  position:absolute;left:10px;bottom:10px;font-family:var(--f-mono);font-size:.6rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+  background:var(--surface);border:1px solid var(--line);padding:3px 7px;border-radius:2px;
+}
+.card-body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card-cat{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.card h3{font-size:1.06rem}
+.card p.desc{font-size:.9rem;color:var(--ink-2);line-height:1.55}
+.specs{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:.8rem;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.specs dt{font-family:var(--f-mono);font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.specs dd{margin:0;color:var(--ink-2)}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:13px;border-top:1px solid var(--line)}
+.price{font-family:var(--f-mono);font-size:.95rem;font-weight:500;color:var(--ink)}
+.price.quote{color:var(--ember);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+.perso{font-size:.78rem;color:var(--muted);display:flex;gap:7px;align-items:flex-start}
+.perso svg{width:13px;height:13px;flex:none;margin-top:4px;color:var(--ember)}
+.empty{padding:40px 0;color:var(--muted);font-family:var(--f-mono);font-size:.84rem}
+
+/* ── Proceso de 4 pasos ────────────────────────────────── */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--line)}
+@media (max-width:860px){ .steps{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:480px){ .steps{grid-template-columns:1fr} }
+.step{background:var(--surface);padding:22px 20px 24px;display:flex;flex-direction:column;gap:9px}
+.step-n{font-family:var(--f-mono);font-size:.78rem;color:var(--accent-ink);background:var(--accent);width:26px;height:26px;display:grid;place-items:center;border-radius:2px;font-weight:500}
+.step h3{font-size:1rem}
+.step p{font-size:.88rem;color:var(--ink-2);line-height:1.55}
+
+/* ── Bloques de dos columnas ───────────────────────────── */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,52px);align-items:start}
+@media (max-width:860px){ .split{grid-template-columns:1fr} }
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,3vw,30px)}
+.panel-tint{background:var(--accent-soft);border-color:transparent}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:9px}
+.tile h3{font-size:1rem}
+.tile p{font-size:.88rem;color:var(--ink-2);line-height:1.55}
+.tile .tag{font-family:var(--f-mono);font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+ul.marks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+ul.marks li{display:flex;gap:11px;align-items:flex-start;font-size:.95rem;color:var(--ink-2)}
+ul.marks li::before{content:"";width:6px;height:6px;flex:none;margin-top:9px;background:var(--accent);border-radius:1px}
+ul.checks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px 22px}
+ul.checks li{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;color:var(--ink-2)}
+ul.checks li::before{content:"";width:13px;height:13px;flex:none;margin-top:5px;border:1.5px solid var(--accent);border-radius:2px}
+
+.factors{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.factor{background:var(--surface);padding:16px 18px}
+.factor span{display:block;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.factor b{font-weight:600;font-size:.94rem}
+
+/* ── Formulario ────────────────────────────────────────── */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:700px){ .form-grid{grid-template-columns:1fr} }
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{
+  font-family:var(--f-body);font-size:.95rem;color:var(--ink);
+  background:var(--ground);border:1px solid var(--line-2);border-radius:var(--r);
+  padding:11px 12px;width:100%;
+}
+.field textarea{resize:vertical;min-height:96px;line-height:1.55}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
+.hint{font-size:.8rem;color:var(--muted)}
+.form-note{display:flex;gap:11px;align-items:flex-start;background:var(--ember-soft);border:1px solid color-mix(in srgb,var(--ember) 35%,transparent);border-radius:var(--r);padding:13px 15px;font-size:.87rem;color:var(--ink-2)}
+.form-note svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--ember)}
+
+/* ── Preguntas frecuentes ──────────────────────────────── */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:17px 40px 17px 0;position:relative;
+  font-family:var(--f-display);font-weight:600;font-size:1.02rem;letter-spacing:-.01em;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:10px;height:10px;
+  border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);
+  transform:translateY(-70%) rotate(45deg);transition:transform .18s ease;
+}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq summary:hover{color:var(--accent)}
+.faq .answer{padding:0 8px 20px 0;color:var(--ink-2);font-size:.95rem;max-width:74ch}
+
+/* ── Contacto ──────────────────────────────────────────── */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px}
+.contact-card{
+  display:flex;flex-direction:column;gap:7px;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--r);padding:20px;text-decoration:none;color:var(--ink);
+  transition:border-color .15s,transform .12s;
+}
+.contact-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.contact-card .ico{width:30px;height:30px;display:grid;place-items:center;border-radius:var(--r);background:var(--accent-soft);color:var(--accent);margin-bottom:4px}
+.contact-card .ico svg{width:17px;height:17px}
+.contact-card .k{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.contact-card .v{font-weight:600;font-size:.98rem;word-break:break-word}
+.pending{
+  display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);
+  font-size:.66rem;letter-spacing:.08em;color:var(--ember);text-transform:uppercase;
+}
+.pending::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ember)}
+
+/* ── Pie de página ─────────────────────────────────────── */
+footer.site{background:var(--surface);border-top:1px solid var(--line);padding-block:48px 34px;margin-top:8px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+@media (max-width:800px){ .foot-grid{grid-template-columns:1fr 1fr} }
+@media (max-width:480px){ .foot-grid{grid-template-columns:1fr} }
+.foot-col h4{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:13px}
+.foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.foot-col a{color:var(--ink-2);text-decoration:none;font-size:.9rem}
+.foot-col a:hover{color:var(--accent)}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-top:36px;padding-top:20px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
+.social{display:flex;gap:8px;margin-top:16px}
+.social a{
+  width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line-2);
+  border-radius:var(--r);color:var(--ink-2);transition:.15s;
+}
+.social a:hover{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.social svg{width:17px;height:17px}
+
+/* ── Botón flotante de WhatsApp ────────────────────────── */
+.float-wa{
+  position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;
+  display:inline-flex;align-items:center;gap:9px;background:#128C7E;color:#fff;
+  padding:13px 17px;border-radius:100px;text-decoration:none;font-weight:600;font-size:.92rem;
+  box-shadow:0 8px 24px -8px rgba(0,0,0,.5);
+}
+.float-wa svg{width:19px;height:19px}
+@media (max-width:620px){ .float-wa span{display:none} .float-wa{padding:15px;border-radius:50%} }
+
+/* ── Ventanas de aviso legal ───────────────────────────── */
+.overlay{position:fixed;inset:0;z-index:90;background:rgba(8,11,16,.6);display:grid;place-items:center;padding:20px}
+.modal{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  max-width:680px;width:100%;max-height:82vh;overflow-y:auto;padding:clamp(22px,3vw,34px);box-shadow:var(--shadow);
+}
+.modal h3{font-size:1.4rem;margin-bottom:6px}
+.modal p,.modal li{font-size:.92rem;color:var(--ink-2);line-height:1.6}
+.modal .close{margin-top:22px}
+</style>
+</head>
+
+<body>
+
+<!-- Íconos reutilizables (dibujos simples, no son archivos externos) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-fig" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <circle cx="24" cy="11" r="5"/><path d="M24 16v14M24 30l-7 10M24 30l7 10M15 22l9-4 9 4"/><ellipse cx="24" cy="42" rx="12" ry="3"/>
+  </symbol>
+  <symbol id="i-mini" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <circle cx="24" cy="16" r="4"/><path d="M24 20v9M24 29l-5 7M24 29l5 7M17 25l7-3 7 3"/><ellipse cx="24" cy="39" rx="9" ry="2.5"/><path d="M15 39v3h18v-3"/>
+  </symbol>
+  <symbol id="i-dio" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <path d="M6 38h36M10 38V26h9v12M22 38V18l7-7 7 7v20"/><path d="M26 38v-8h6v8"/>
+  </symbol>
+  <symbol id="i-paint" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <path d="M30 8l10 10-16 16-10-10z"/><path d="M14 24l-5 12 12-5"/><path d="M9 36l-3 6 6-3"/>
+  </symbol>
+  <symbol id="i-painted" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <path d="M24 6c10 0 18 7 18 16 0 6-5 8-9 8h-4c-3 0-5 2-5 4 0 3 2 3 2 5 0 2-2 3-4 3-9 0-16-8-16-18S14 6 24 6z"/>
+    <circle cx="16" cy="18" r="2.2"/><circle cx="24" cy="14" r="2.2"/><circle cx="32" cy="19" r="2.2"/>
+  </symbol>
+  <symbol id="i-deco" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <path d="M17 8h14l-3 7c6 3 9 8 9 14 0 6-5 11-13 11s-13-5-13-11c0-6 3-11 9-14z"/><path d="M14 27h20"/>
+  </symbol>
+  <symbol id="i-func" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <circle cx="24" cy="24" r="7"/><path d="M24 5v6M24 37v6M5 24h6M37 24h6M11 11l4 4M33 33l4 4M37 11l-4 4M15 33l-4 4"/>
+  </symbol>
+  <symbol id="i-perso" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <rect x="5" y="10" width="17" height="14" rx="2"/><circle cx="10.5" cy="15" r="1.6"/><path d="M5 21l5-4 4 3 3-3 5 5"/>
+    <path d="M25 17h9M34 17l-3-3M34 17l-3 3"/><path d="M38 22l5 3v8l-5 3-5-3v-8z"/><path d="M38 25v11M33 25l5 3 5-3"/>
+  </symbol>
+  <symbol id="i-mas" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <path d="M24 6l-11 24M24 6l11 24"/><circle cx="24" cy="6" r="1.8"/><path d="M11 22l13 12 13-12"/><path d="M24 34v6"/>
+  </symbol>
+  <symbol id="i-otros" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+    <path d="M24 5l16 9v20l-16 9-16-9V14z"/><path d="M24 25v18M8 14l16 11 16-11"/>
+  </symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.3-.6-.4z"/>
+    <path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1112 20.2z"/>
+  </symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+    <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M14 8.5V7c0-.8.2-1.2 1.4-1.2H17V3h-2.6C11.2 3 10 4.6 10 7.2v1.3H8V12h2v9h4v-9h2.7l.3-3.5z"/>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round">
+    <rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>
+  </symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2 6.5L20.5 11 14 13.5 12 20l-2-6.5L3.5 11 10 8.5z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <circle cx="12" cy="12" r="9.2"/><path d="M12 11v5.5M12 7.6v.2"/>
+  </symbol>
+</svg>
+
+<!-- ══════════════════ ENCABEZADO ══════════════════ -->
+<header class="site">
+  <div class="wrap navbar">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="#fff"><rect x="7" y="9" width="18" height="3" rx="1.5"/><rect x="9" y="15" width="14" height="3" rx="1.5"/><rect x="11" y="21" width="10" height="3" rx="1.5"/></g></svg>
+      </span>
+      <span>
+        <span class="brand-name" data-cfg="marca">Capa Cero</span>
+        <span class="brand-sub">Taller de impresión 3D</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+
+    <nav class="main" id="mainNav" aria-label="Menú principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#personaliza">Personaliza</a>
+      <a href="#dioramas">Dioramas</a>
+      <a href="#para-pintar">Para pintar</a>
+      <a href="#pintadas">Pintadas</a>
+      <a href="#stl">Tu STL</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-primary btn-sm header-cta" href="#cotizacion">Cotizar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ══════════════════ 1. INICIO ══════════════════ -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="stack">
+      <p class="eyebrow">Diseño · Fabricación · Acabado — Puebla, México</p>
+      <h1>De una idea a <em>una pieza real</em>.</h1>
+      <p class="lead">Diseño, personalización e impresión 3D para crear piezas únicas. Trabajamos desde una fotografía, un boceto, una descripción o tu propio archivo STL.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+        <a class="btn btn-outline" href="#cotizacion">Solicitar cotización</a>
+        <a class="btn btn-solid" href="#personaliza">Crear mi pieza</a>
+      </div>
+      <div class="hero-facts">
+        <span class="fact">Piezas desde <b>1 unidad</b></span>
+        <span class="fact">Detalle hasta <b>0.05 mm</b></span>
+        <span class="fact">Pintado <b>a mano</b></span>
+        <span class="fact">Envíos a <b>todo México</b></span>
+      </div>
+    </div>
+
+    <!-- Panel decorativo: una pieza formándose capa por capa -->
+    <div class="plate" aria-hidden="true">
+      <div class="plate-head"><span><span class="plate-dot"></span>Cama de impresión</span><span>Capa 128 / 340</span></div>
+      <div class="plate-stage">
+        <svg viewBox="0 0 200 150" role="presentation">
+          <g stroke="var(--line-2)" stroke-width="1" fill="none">
+            <path d="M0 132h200"/>
+          </g>
+          <g fill="var(--accent)" opacity=".92">
+            <rect class="lyr" style="animation-delay:.05s" x="62"  y="118" width="76" height="12" rx="2"/>
+            <rect class="lyr" style="animation-delay:.12s" x="68"  y="104" width="64" height="12" rx="2"/>
+            <rect class="lyr" style="animation-delay:.19s" x="74"  y="90"  width="52" height="12" rx="2"/>
+            <rect class="lyr" style="animation-delay:.26s" x="78"  y="76"  width="44" height="12" rx="2"/>
+            <rect class="lyr" style="animation-delay:.33s" x="72"  y="62"  width="56" height="12" rx="2"/>
+            <rect class="lyr" style="animation-delay:.40s" x="80"  y="48"  width="40" height="12" rx="2"/>
+          </g>
+          <g fill="var(--ember)">
+            <rect class="lyr" style="animation-delay:.47s" x="86" y="34" width="28" height="12" rx="2"/>
+          </g>
+          <g stroke="var(--ink-2)" stroke-width="2.4" fill="none" opacity=".55">
+            <path d="M100 4v14"/><path d="M92 18h16l-4 10h-8z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="plate-foot">
+        <div><span>Material</span><b>PLA+</b></div>
+        <div><span>Altura de capa</span><b>0.12 mm</b></div>
+        <div><span>Tiempo</span><b>6 h 40 m</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 2. CATÁLOGO ══════════════════ -->
+<section id="catalogo">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Catálogo</p>
+      <h2>Lo que sale del taller</h2>
+      <p class="lead">Cada pieza se fabrica por encargo. Elige una categoría para filtrar, revisa la ficha técnica y pide la tuya con el tamaño, material y color que necesites.</p>
+    </div>
+
+    <div>
+      <div class="filters" id="filtros" role="group" aria-label="Filtrar catálogo por categoría"></div>
+      <div class="grid-cards" id="catalogoGrid"></div>
+      <p class="empty" id="catalogoVacio" hidden>No hay piezas en esta categoría todavía. Escríbenos y la fabricamos.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 3. PERSONALIZA TU PIEZA ══════════════════ -->
+<section id="personaliza">
+  <div class="wrap stack-lg">
+    <div class="split">
+      <div class="stack">
+        <p class="eyebrow">Personaliza tu pieza</p>
+        <h2>Si te lo puedes imaginar, podemos intentar fabricarlo</h2>
+        <p class="lead">No necesitas saber modelar ni tener un archivo. Con una referencia clara podemos diseñar la pieza desde cero y adaptarla para que imprima bien.</p>
+      </div>
+      <div class="panel panel-tint">
+        <h3 style="margin-bottom:14px">Puedes enviarnos</h3>
+        <ul class="marks">
+          <li>Una fotografía</li>
+          <li>Varias fotografías desde distintos ángulos</li>
+          <li>Un dibujo o boceto hecho a mano</li>
+          <li>Una referencia (una imagen de internet, una figura parecida)</li>
+          <li>Una descripción escrita de lo que quieres</li>
+          <li>Un archivo STL, OBJ o 3MF</li>
+          <li>Simplemente una idea, y la trabajamos contigo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step"><span class="step-n">1</span><h3>Envíanos tu idea</h3><p>Mándanos fotos, referencias o una descripción por WhatsApp. Te preguntamos el uso, el tamaño y el presupuesto que tienes en mente.</p></div>
+      <div class="step"><span class="step-n">2</span><h3>Diseñamos o adaptamos el modelo</h3><p>Modelamos la pieza desde cero o ajustamos un modelo existente: proporciones, espesores, base y puntos de apoyo.</p></div>
+      <div class="step"><span class="step-n">3</span><h3>Te mostramos la propuesta</h3><p>Recibes imágenes del modelo en 3D antes de imprimir. Ajustamos lo que haga falta y confirmamos precio y tiempo.</p></div>
+      <div class="step"><span class="step-n">4</span><h3>Fabricamos tu pieza</h3><p>Imprimimos, retiramos soportes, limpiamos y, si lo pediste, pintamos a mano. Te avisamos cuando esté lista.</p></div>
+    </div>
+
+    <div><a class="btn btn-wa" data-wa="Hola, quiero una pieza personalizada. Te cuento mi idea:"><svg width="18" height="18"><use href="#i-wa"></use></svg>Solicitar cotización personalizada</a></div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 4. DIORAMAS ══════════════════ -->
+<section id="dioramas">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Dioramas</p>
+      <h2>Escenas completas, no solo figuras</h2>
+      <p class="lead">Una figura cuenta un personaje; un diorama cuenta una historia. Fabricamos la base, la ambientación y los elementos de la escena para que todo funcione como una sola pieza.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="tag">Kit sin pintar</span><h3>Dioramas para pintar</h3><p>Llegan impresos, limpios y con la escena dividida en piezas encajables. Listos para imprimar y pintar a tu ritmo.</p></div>
+      <div class="tile"><span class="tag">Listo para exhibir</span><h3>Dioramas terminados</h3><p>Pintados a mano, con texturas, tierra, vegetación y efectos. Se entregan montados sobre su base.</p></div>
+      <div class="tile"><span class="tag">Bajo pedido</span><h3>Dioramas personalizados</h3><p>Tu personaje, tu videojuego, tu momento favorito o una escena inventada por ti. Diseñamos la composición contigo.</p></div>
+      <div class="tile"><span class="tag">Proyecto especial</span><h3>Escenas completas</h3><p>Varios personajes, arquitectura, terreno y ambientación en un mismo conjunto, con iluminación opcional.</p></div>
+    </div>
+    <div><a class="btn btn-outline" data-wa="Hola, me interesa un diorama. Quiero una escena de:">Cotizar un diorama</a></div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 5. FIGURAS PARA PINTAR ══════════════════ -->
+<section id="para-pintar">
+  <div class="wrap split">
+    <div class="stack">
+      <p class="eyebrow">Figuras para pintar</p>
+      <h2>Piezas limpias, pensadas para el pincel</h2>
+      <p class="lead">Si pintas miniaturas, sabes que media batalla está en la impresión. Entregamos las piezas con los soportes retirados, la superficie limpia y el detalle intacto.</p>
+      <ul class="marks">
+        <li><b>Tamaños a elegir:</b> desde escala 28–32 mm hasta bustos y figuras de 15 cm o más.</li>
+        <li><b>Niveles de detalle:</b> capa de 0.20 mm para piezas grandes y económicas, 0.12 mm para uso general, 0.05 mm en resina para detalle fino de rostro y textura.</li>
+        <li><b>Material a elegir:</b> PLA para piezas robustas y económicas; resina para el máximo detalle.</li>
+        <li><b>Separada por partes</b> cuando conviene, para que puedas pintar el interior y las zonas escondidas antes de montar.</li>
+        <li><b>Base incluida</b> lisa, texturizada o a juego con tu ejército o colección.</li>
+      </ul>
+      <div><a class="btn btn-outline" data-wa="Hola, quiero figuras para pintar. Me interesa:">Pedir piezas para pintar</a></div>
+    </div>
+    <div class="panel">
+      <p class="eyebrow" style="margin-bottom:16px">Cómo elegir el detalle</p>
+      <div class="factors">
+        <div class="factor"><span>Capa 0.20 mm</span><b>Piezas grandes, terreno y props</b></div>
+        <div class="factor"><span>Capa 0.12 mm</span><b>Figuras de colección y uso general</b></div>
+        <div class="factor"><span>Resina 0.05 mm</span><b>Rostros, escamas, telas y miniaturas</b></div>
+      </div>
+      <p class="hint" style="margin-top:16px">¿No sabes cuál pedir? Dinos qué vas a pintar y con qué técnica, y te recomendamos la combinación de material y capa.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 6. FIGURAS PINTADAS ══════════════════ -->
+<section id="pintadas">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Figuras pintadas</p>
+      <h2>Terminadas a mano, listas para la vitrina</h2>
+      <p class="lead">Pintamos con acrílicos, capa por capa: imprimación, color base, sombras, luces, detalles finos y barniz protector. Cada pieza es única, por eso el precio del pintado se calcula por trabajo y no por catálogo.</p>
+    </div>
+
+    <div>
+      <p class="eyebrow">El precio del pintado depende de</p>
+      <div class="factors">
+        <div class="factor"><span>01</span><b>Tamaño de la pieza</b></div>
+        <div class="factor"><span>02</span><b>Complejidad del modelo</b></div>
+        <div class="factor"><span>03</span><b>Número de colores</b></div>
+        <div class="factor"><span>04</span><b>Nivel de detalle</b></div>
+        <div class="factor"><span>05</span><b>Tiempo de pintura</b></div>
+        <div class="factor"><span>06</span><b>Acabado final</b></div>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="panel">
+        <h3>Tres niveles de acabado</h3>
+        <ul class="marks" style="margin-top:14px">
+          <li><b>Básico:</b> colores planos, lavado de sombras y barniz. Ideal para figuras de juego y pedidos de varias piezas.</li>
+          <li><b>Colección:</b> luces y sombras trabajadas, detalles de rostro y materiales diferenciados (metal, cuero, tela).</li>
+          <li><b>Vitrina:</b> transiciones suaves, efectos especiales, base ambientada y acabado de exhibición.</li>
+        </ul>
+      </div>
+      <div class="panel panel-tint">
+        <h3>Antes de empezar</h3>
+        <p style="margin-top:12px;color:var(--ink-2);font-size:.94rem">Te enviamos una referencia de color o un esquema propuesto. Si tienes una paleta en mente —los colores de tu ejército, el arte original del personaje, una foto— trabajamos sobre esa referencia.</p>
+        <div style="margin-top:18px"><a class="btn btn-wa" data-wa="Hola, quiero cotizar una figura pintada:"><svg width="18" height="18"><use href="#i-wa"></use></svg>Cotizar pintado</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 7. IMPRESIÓN DE ARCHIVOS DEL CLIENTE ══════════════════ -->
+<section id="stl">
+  <div class="wrap split">
+    <div class="stack">
+      <p class="eyebrow">Impresión de tu archivo</p>
+      <h2>¿Ya tienes tu STL? Nosotros lo imprimimos</h2>
+      <p class="lead">Aceptamos archivos STL, OBJ y 3MF, sean tuyos, comprados o descargados. Antes de imprimir revisamos el modelo y te avisamos si algo puede fallar, para que no gastes material en una pieza que no va a salir bien.</p>
+      <div>
+        <p class="eyebrow" style="margin-bottom:12px">Qué revisamos antes de imprimir</p>
+        <ul class="checks">
+          <li>Escala real de la pieza</li>
+          <li>Geometría y mallas abiertas</li>
+          <li>Espesor mínimo de pared</li>
+          <li>Errores y caras invertidas</li>
+          <li>Orientación óptima</li>
+          <li>Necesidad de soportes</li>
+          <li>Viabilidad de impresión</li>
+        </ul>
+      </div>
+      <div><a class="btn btn-wa" data-wa="Hola, tengo un archivo STL que quiero imprimir. Te lo envío por aquí."><svg width="18" height="18"><use href="#i-wa"></use></svg>Enviar mi archivo</a></div>
+    </div>
+
+    <div class="panel">
+      <h3>Cómo se calcula el precio</h3>
+      <div class="factors" style="margin-top:16px">
+        <div class="factor"><span>Material</span><b>PLA, PETG o resina</b></div>
+        <div class="factor"><span>Tamaño</span><b>Volumen y altura</b></div>
+        <div class="factor"><span>Tiempo</span><b>Horas de impresión</b></div>
+        <div class="factor"><span>Complejidad</span><b>Soportes y postproceso</b></div>
+      </div>
+      <p class="hint" style="margin-top:16px">Envíanos el archivo y el tamaño en el que lo quieres. Te devolvemos precio y tiempo estimado, normalmente el mismo día.</p>
+      <p class="hint" style="margin-top:10px">Si el modelo tiene errores que impidan imprimirlo, te decimos exactamente cuáles y, si quieres, lo reparamos como servicio aparte.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 8. COTIZACIÓN ══════════════════ -->
+<section id="cotizacion">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Cotización</p>
+      <h2>Cuéntanos qué quieres fabricar</h2>
+      <p class="lead">Llena lo que sepas —lo que no, lo resolvemos juntos— y al enviar se abre WhatsApp con todos tus datos ya escritos. Ahí mismo puedes adjuntar tus fotos y archivos.</p>
+    </div>
+
+    <form id="formCotizacion" class="panel" novalidate>
+      <div class="form-grid">
+        <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required></div>
+        <div class="field"><label for="f-whatsapp">WhatsApp</label><input id="f-whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="222 123 4567"></div>
+        <div class="field"><label for="f-correo">Correo</label><input id="f-correo" name="correo" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com"></div>
+        <div class="field">
+          <label for="f-que">¿Qué quieres fabricar?</label>
+          <select id="f-que" name="que">
+            <option>Figura personalizada</option><option>Miniatura</option><option>Diorama</option>
+            <option>Pieza para pintar</option><option>Figura pintada</option><option>Decoración</option>
+            <option>Objeto funcional</option><option>Llavero o accesorio</option><option>Repuesto o pieza especial</option>
+            <option>Artículo masónico</option><option>Impresión de mi archivo STL</option><option>Otro / no estoy seguro</option>
+          </select>
+        </div>
+        <div class="field full"><label for="f-desc">Descripción</label><textarea id="f-desc" name="descripcion" placeholder="Describe la pieza: qué es, para quién, cómo la imaginas, si tienes una referencia..."></textarea></div>
+        <div class="field"><label for="f-cantidad">Cantidad</label><input id="f-cantidad" name="cantidad" type="number" min="1" step="1" value="1"></div>
+        <div class="field"><label for="f-tamano">Tamaño aproximado</label><input id="f-tamano" name="tamano" type="text" placeholder="Ej. 15 cm de alto"></div>
+        <div class="field">
+          <label for="f-material">Material</label>
+          <select id="f-material" name="material"><option>No sé, recomiéndenme</option><option>PLA</option><option>PETG</option><option>Resina (máximo detalle)</option><option>Material flexible</option></select>
+        </div>
+        <div class="field">
+          <label for="f-pintura">¿Quieres pintura?</label>
+          <select id="f-pintura" name="pintura"><option>Sin pintar</option><option>Pintado básico</option><option>Pintado de colección</option><option>Pintado de vitrina</option><option>No sé todavía</option></select>
+        </div>
+        <div class="field">
+          <label for="f-stl">¿Tienes archivo STL?</label>
+          <select id="f-stl" name="stl"><option>No</option><option>Sí, lo envío por WhatsApp</option><option>Sí, pero necesita arreglos</option></select>
+        </div>
+        <div class="field">
+          <label for="f-refs">¿Tienes fotografías o referencias?</label>
+          <select id="f-refs" name="referencias"><option>Sí, las envío por WhatsApp</option><option>No, solo la descripción</option><option>Tengo un dibujo o boceto</option></select>
+        </div>
+        <div class="field full"><label for="f-fecha">¿Para cuándo lo necesitas?</label><input id="f-fecha" name="fecha" type="date"></div>
+      </div>
+
+      <div class="form-note" style="margin-top:20px">
+        <svg aria-hidden="true"><use href="#i-info"></use></svg>
+        <span><b>Sobre las fotos y archivos:</b> al enviar este formulario se abre una conversación de WhatsApp con tus datos ya escritos. Adjunta ahí tus imágenes, bocetos o tu archivo STL directamente desde tu teléfono o computadora.</span>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;align-items:center">
+        <button class="btn btn-primary" type="submit">Solicitar cotización</button>
+        <button class="btn btn-outline" type="button" id="btnCorreo">Enviarlo por correo</button>
+        <span class="hint" id="formEstado" role="status" aria-live="polite"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 9. SOBRE NOSOTROS ══════════════════ -->
+<section id="nosotros">
+  <div class="wrap split">
+    <div class="stack">
+      <p class="eyebrow">Sobre nosotros</p>
+      <h2>Un taller pequeño, con las manos en cada pieza</h2>
+      <p class="lead">Somos un taller de impresión 3D en Puebla dedicado a convertir ideas digitales en objetos físicos. Diseñamos, imprimimos, limpiamos, lijamos y pintamos aquí mismo.</p>
+      <p style="color:var(--ink-2)">No somos una fábrica ni un catálogo cerrado: trabajamos por encargo y atendemos personalmente cada proyecto, desde un llavero con un nombre hasta un diorama de varias piezas o un repuesto que ya no se consigue. Si la pieza se puede fabricar, lo primero que hacemos es decirte cómo; si no se puede, también te lo decimos, y buscamos otra forma de resolverlo.</p>
+      <p style="color:var(--ink-2)">Nos gusta el trabajo bien hecho y las cosas que duran: piezas sólidas, superficies limpias, pintura cuidada y un acabado del que puedas presumir en una vitrina, en un escritorio o en una mesa de juego.</p>
+    </div>
+    <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr))">
+      <div class="tile"><span class="tag">01</span><h3>Creatividad</h3><p>Proponemos soluciones, no solo imprimimos lo que llega.</p></div>
+      <div class="tile"><span class="tag">02</span><h3>Trabajo artesanal</h3><p>Limpieza, lijado y pintura hechos a mano, pieza por pieza.</p></div>
+      <div class="tile"><span class="tag">03</span><h3>Tecnología</h3><p>Modelado 3D e impresión por filamento y resina.</p></div>
+      <div class="tile"><span class="tag">04</span><h3>Atención directa</h3><p>Hablas con quien fabrica tu pieza, de principio a fin.</p></div>
+      <div class="tile"><span class="tag">05</span><h3>Calidad</h3><p>Revisamos cada pieza antes de entregarla.</p></div>
+      <div class="tile"><span class="tag">06</span><h3>Proyectos especiales</h3><p>Series cortas, prototipos y encargos fuera de lo común.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 10. PREGUNTAS FRECUENTES ══════════════════ -->
+<section id="faq">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que nos preguntan antes de encargar</h2>
+    </div>
+    <div class="faq">
+      <details><summary>¿Cuánto tarda una impresión?</summary><div class="answer">Depende del tamaño y del detalle. Un llavero puede salir en menos de una hora; una figura mediana toma entre 6 y 12 horas de impresión; un diorama grande puede llevar varios días entre impresión, montaje y pintura. Al cotizar te damos una fecha concreta de entrega.</div></details>
+      <details><summary>¿Qué materiales utilizan?</summary><div class="answer">Principalmente PLA y PLA+ para piezas decorativas y de colección, PETG para piezas que necesitan resistencia o van a estar a la intemperie, y resina cuando se busca el máximo nivel de detalle. También trabajamos materiales flexibles para piezas específicas.</div></details>
+      <details><summary>¿Puedo mandar mi propio STL?</summary><div class="answer">Sí. Acepta­mos STL, OBJ y 3MF. Revisamos el archivo antes de imprimir y te avisamos si tiene errores de geometría, paredes demasiado delgadas o zonas que necesitan soportes.</div></details>
+      <details><summary>¿Pueden diseñar una pieza desde una fotografía?</summary><div class="answer">En muchos casos sí. Entre más fotos y desde más ángulos, mejor resultado. Una sola foto de frente sirve para piezas sencillas o en relieve; para una figura completa o un retrato conviene mandar varias imágenes. Si no es técnicamente posible, te lo decimos antes de cobrar nada.</div></details>
+      <details><summary>¿Puedo elegir el color?</summary><div class="answer">Sí. Puedes elegir entre los colores de filamento disponibles, o pedir la pieza en un color neutro para pintarla tú. Si necesitas un color específico que no tenemos, podemos conseguirlo o pintarla a mano hasta igualarlo.</div></details>
+      <details><summary>¿Pintan las figuras?</summary><div class="answer">Sí, pintamos a mano con acrílicos y barniz protector. Ofrecemos tres niveles de acabado: básico, colección y vitrina. También puedes pedir la pieza sin pintar si prefieres hacerlo tú.</div></details>
+      <details><summary>¿Hacen figuras personalizadas?</summary><div class="answer">Es lo que más hacemos. Personajes, retratos, mascotas, logotipos, regalos con nombre y fecha, piezas conmemorativas y objetos que no existen en el mercado.</div></details>
+      <details><summary>¿Hacen envíos?</summary><div class="answer">Sí, enviamos a todo México por paquetería con número de guía. El costo del envío se calcula según el tamaño y el destino. En la ciudad de Puebla también puedes recoger o coordinar entrega.</div></details>
+      <details><summary>¿Puedo pedir una sola pieza?</summary><div class="answer">Sí. No hay mínimo de compra: trabajamos igual una pieza única que una serie de cincuenta.</div></details>
+      <details><summary>¿Pueden hacer piezas grandes?</summary><div class="answer">Sí. Cuando una pieza excede el tamaño de la impresora, la dividimos en secciones y la ensamblamos, dejando las uniones en zonas donde no se noten.</div></details>
+      <details><summary>¿Cómo se calcula el precio?</summary><div class="answer">Por cuatro factores: el material que se usa, el tamaño de la pieza, las horas de impresión y la complejidad del trabajo (diseño, soportes, postproceso y pintura). Por eso muchas piezas se cotizan y no tienen precio fijo de catálogo.</div></details>
+      <details><summary>¿Puedo solicitar un diseño exclusivo?</summary><div class="answer">Sí. Podemos modelar una pieza única para ti y, si lo acuerdas con nosotros, no venderla a nadie más. El diseño exclusivo se cotiza aparte de la impresión.</div></details>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ══════════════════ 11. CONTACTO ══════════════════ -->
+<section id="contacto">
+  <div class="wrap stack-lg">
+    <div class="stack">
+      <p class="eyebrow">Contacto</p>
+      <h2>Escríbenos y empezamos</h2>
+      <p class="lead">La forma más rápida es WhatsApp: mándanos la foto o la idea y te respondemos con precio y tiempo.</p>
+    </div>
+    <div class="contact-grid" id="contactoGrid"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════ 12. PIE DE PÁGINA ══════════════════ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a class="brand" href="#inicio" style="margin-bottom:12px">
+          <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><g fill="#fff"><rect x="7" y="9" width="18" height="3" rx="1.5"/><rect x="9" y="15" width="14" height="3" rx="1.5"/><rect x="11" y="21" width="10" height="3" rx="1.5"/></g></svg></span>
+          <span><span class="brand-name" data-cfg="marca">Capa Cero</span><span class="brand-sub">Taller de impresión 3D</span></span>
+        </a>
+        <p style="color:var(--muted);font-size:.9rem;max-width:34ch">De una idea a una pieza real. Diseño, impresión 3D y pintado a mano en Puebla, México.</p>
+        <div class="social" id="socialFooter"></div>
+      </div>
+      <div class="foot-col">
+        <h4>Piezas</h4>
+        <ul>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#dioramas">Dioramas</a></li>
+          <li><a href="#para-pintar">Figuras para pintar</a></li>
+          <li><a href="#pintadas">Figuras pintadas</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#personaliza">Personalizados</a></li>
+          <li><a href="#stl">Impresión de tu STL</a></li>
+          <li><a href="#cotizacion">Cotizaciones</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto y legal</h4>
+        <ul id="footContacto">
+          <li><a href="#" data-modal="privacidad">Aviso de privacidad</a></li>
+          <li><a href="#" data-modal="terminos">Términos y condiciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="anio">2026</span> <span data-cfg="marca">Capa Cero</span>. Hecho en Puebla, México.</span>
+      <span style="font-family:var(--f-mono);font-size:.74rem;letter-spacing:.1em">DE UNA IDEA A UNA PIEZA REAL</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" id="floatWa" href="#cotizacion" aria-label="Escribir por WhatsApp">
+  <svg aria-hidden="true"><use href="#i-wa"></use></svg><span>WhatsApp</span>
+</a>
+
+<!-- Ventanas legales -->
+<div class="overlay" id="overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <h3 id="modalTitulo"></h3>
+    <div id="modalCuerpo"></div>
+    <button class="btn btn-outline close" id="modalCerrar" type="button">Cerrar</button>
+  </div>
+</div>
+
+<script>
+/* ╔═══════════════════════════════════════════════════════════════════╗
+   ║  ZONA EDITABLE — AQUÍ CAMBIAS TUS DATOS                          ║
+   ║  Cambia solo lo que está entre comillas. No borres las comillas  ║
+   ║  ni las comas del final de cada línea.                           ║
+   ╚═══════════════════════════════════════════════════════════════════╝ */
+
+const CONFIG = {
+
+  // ── 1. TU MARCA ────────────────────────────────────────────────────
+  marca: "Capa Cero",
+
+  // ── 2. TU WHATSAPP ─────────────────────────────────────────────────
+  // Escribe 52 + tus 10 dígitos, todo junto y sin espacios ni signos.
+  // Ejemplo para un número de Puebla 222 123 4567  →  "522221234567"
+  // Si al probarlo no abre tu chat, prueba poniendo 521 en lugar de 52.
+  whatsapp: "",
+
+  // ── 3. TUS REDES SOCIALES ──────────────────────────────────────────
+  // Pega la dirección completa de tu perfil, empezando con https://
+  instagram: "",     // ejemplo: "https://instagram.com/tucuenta"
+  facebook:  "",     // ejemplo: "https://facebook.com/tupagina"
+
+  // ── 4. TU CORREO ───────────────────────────────────────────────────
+  correo: "",        // ejemplo: "contacto@tutaller.com"
+
+  // ── 5. TU CIUDAD (aparece en la sección de contacto) ───────────────
+  ciudad: "Puebla, México",
+};
+
+
+/* ╔═══════════════════════════════════════════════════════════════════╗
+   ║  TU CATÁLOGO — AGREGA, QUITA O CAMBIA PIEZAS AQUÍ                ║
+   ║                                                                   ║
+   ║  Cada pieza va entre llaves { } y termina con una coma.          ║
+   ║  Para agregar una pieza nueva, copia un bloque completo,          ║
+   ║  pégalo debajo y cambia el texto.                                 ║
+   ║                                                                   ║
+   ║  foto:  déjalo vacío ""  y se muestra un dibujo temporal.        ║
+   ║         Cuando tengas tu fotografía, sube el archivo junto a      ║
+   ║         esta página y escribe aquí el nombre, por ejemplo:        ║
+   ║         foto: "fotos/dragon.jpg"                                  ║
+   ║                                                                   ║
+   ║  precio: escribe "Cotizar" o un precio, por ejemplo "$350 MXN"   ║
+   ║                                                                   ║
+   ║  categoria: usa exactamente una de estas palabras:                ║
+   ║  figuras, miniaturas, dioramas, para-pintar, pintadas,            ║
+   ║  decoracion, funcionales, personalizados, masoneria, otros        ║
+   ╚═══════════════════════════════════════════════════════════════════╝ */
+
+const CATALOGO = [
+  {
+    categoria: "figuras",
+    nombre: "Figura de personaje bajo pedido",
+    foto: "",
+    descripcion: "Tu personaje favorito de videojuego, película o serie, fabricado en el tamaño que necesites.",
+    tamano: "10 a 25 cm de alto",
+    material: "PLA+ o resina",
+    color: "A elegir",
+    detalle: "Capa 0.12 mm",
+    tiempo: "3 a 6 días",
+    precio: "Cotizar",
+    personalizacion: "Pose, tamaño, base y color"
+  },
+  {
+    categoria: "figuras",
+    nombre: "Busto a partir de fotografía",
+    foto: "",
+    descripcion: "Retrato en tres dimensiones modelado desde tus fotos. Ideal como regalo o pieza conmemorativa.",
+    tamano: "12 a 18 cm",
+    material: "Resina",
+    color: "Gris para pintar o pintado a mano",
+    detalle: "Capa 0.05 mm",
+    tiempo: "7 a 12 días",
+    precio: "Cotizar",
+    personalizacion: "Rostro, peinado, ropa y base grabada"
+  },
+  {
+    categoria: "miniaturas",
+    nombre: "Miniaturas de juego de mesa",
+    foto: "",
+    descripcion: "Héroes, enemigos y unidades para tus partidas, en escala compatible con la mayoría de los juegos.",
+    tamano: "Escala 28 a 32 mm",
+    material: "Resina",
+    color: "Gris de imprimación",
+    detalle: "Capa 0.05 mm",
+    tiempo: "2 a 5 días",
+    precio: "Cotizar",
+    personalizacion: "Arma, pose, base y escala"
+  },
+  {
+    categoria: "miniaturas",
+    nombre: "Set de bases temáticas",
+    foto: "",
+    descripcion: "Bases texturizadas para dar carácter a tu ejército: ruinas, bosque, desierto o piedra.",
+    tamano: "25, 32 y 40 mm",
+    material: "Resina",
+    color: "Gris",
+    detalle: "Capa 0.05 mm",
+    tiempo: "2 a 4 días",
+    precio: "Cotizar",
+    personalizacion: "Textura y cantidad por set"
+  },
+  {
+    categoria: "dioramas",
+    nombre: "Diorama de escena completa",
+    foto: "",
+    descripcion: "Escena con personajes, arquitectura y ambientación montada sobre una base de exhibición.",
+    tamano: "20 × 20 cm o a medida",
+    material: "PLA+ y resina",
+    color: "Pintado a mano",
+    detalle: "Mixto según la pieza",
+    tiempo: "2 a 4 semanas",
+    precio: "Cotizar",
+    personalizacion: "Tema, número de figuras e iluminación"
+  },
+  {
+    categoria: "dioramas",
+    nombre: "Kit de diorama para armar",
+    foto: "",
+    descripcion: "Piezas encajables y sin pintar para que montes y pintes la escena a tu ritmo.",
+    tamano: "15 × 15 cm",
+    material: "PLA+",
+    color: "Gris o beige",
+    detalle: "Capa 0.12 mm",
+    tiempo: "5 a 8 días",
+    precio: "Cotizar",
+    personalizacion: "Nivel de dificultad y accesorios"
+  },
+  {
+    categoria: "para-pintar",
+    nombre: "Figura limpia lista para imprimar",
+    foto: "",
+    descripcion: "Impresa, con soportes retirados y superficie revisada. Llega lista para pintar.",
+    tamano: "A elegir",
+    material: "PLA+ o resina",
+    color: "Gris neutro",
+    detalle: "0.20, 0.12 o 0.05 mm",
+    tiempo: "2 a 5 días",
+    precio: "Cotizar",
+    personalizacion: "Escala, nivel de capa y división por partes"
+  },
+  {
+    categoria: "pintadas",
+    nombre: "Figura terminada nivel vitrina",
+    foto: "",
+    descripcion: "Pintada a mano con luces, sombras y efectos, barnizada y montada sobre base.",
+    tamano: "15 a 25 cm",
+    material: "Resina",
+    color: "Paleta a elegir",
+    detalle: "Capa 0.05 mm",
+    tiempo: "2 a 3 semanas",
+    precio: "Cotizar",
+    personalizacion: "Esquema de color y base ambientada"
+  },
+  {
+    categoria: "decoracion",
+    nombre: "Lámpara litofanía con tu foto",
+    foto: "",
+    descripcion: "Una fotografía impresa en relieve que revela la imagen al encender la luz.",
+    tamano: "14 cm de alto",
+    material: "PLA blanco",
+    color: "Blanco translúcido",
+    detalle: "Capa 0.08 mm",
+    tiempo: "3 a 5 días",
+    precio: "Cotizar",
+    personalizacion: "Fotografía, forma y base con luz"
+  },
+  {
+    categoria: "decoracion",
+    nombre: "Maceta y portavelas geométricos",
+    foto: "",
+    descripcion: "Piezas decorativas de líneas limpias para escritorio, repisa o centro de mesa.",
+    tamano: "8 a 20 cm",
+    material: "PLA+ o PETG",
+    color: "A elegir",
+    detalle: "Capa 0.20 mm",
+    tiempo: "2 a 4 días",
+    precio: "Cotizar",
+    personalizacion: "Tamaño, color y grabado"
+  },
+  {
+    categoria: "funcionales",
+    nombre: "Organizadores y soportes a medida",
+    foto: "",
+    descripcion: "Soportes para audífonos, control, celular, herramienta o lo que necesites ordenar.",
+    tamano: "A medida",
+    material: "PETG",
+    color: "A elegir",
+    detalle: "Capa 0.20 mm",
+    tiempo: "2 a 4 días",
+    precio: "Cotizar",
+    personalizacion: "Medidas exactas de tu objeto"
+  },
+  {
+    categoria: "funcionales",
+    nombre: "Repuesto o pieza descontinuada",
+    foto: "",
+    descripcion: "Esa pieza de plástico que se rompió y ya no se consigue. Mándanos fotos con medidas.",
+    tamano: "Según la pieza original",
+    material: "PETG o PLA+",
+    color: "Negro, blanco o a elegir",
+    detalle: "Capa 0.12 mm",
+    tiempo: "4 a 8 días",
+    precio: "Cotizar",
+    personalizacion: "Refuerzo y ajuste de medidas"
+  },
+  {
+    categoria: "personalizados",
+    nombre: "Llaveros y accesorios con nombre",
+    foto: "",
+    descripcion: "Llaveros, pines, separadores y detalles con nombre, fecha o logotipo. Ideales para eventos.",
+    tamano: "4 a 8 cm",
+    material: "PLA+",
+    color: "A elegir",
+    detalle: "Capa 0.12 mm",
+    tiempo: "2 a 4 días",
+    precio: "Cotizar",
+    personalizacion: "Texto, tipografía, color y cantidad"
+  },
+  {
+    categoria: "personalizados",
+    nombre: "Regalo conmemorativo",
+    foto: "",
+    descripcion: "Bodas, aniversarios, graduaciones y reconocimientos, con la fecha y el nombre grabados.",
+    tamano: "10 a 20 cm",
+    material: "PLA+ o resina",
+    color: "A elegir",
+    detalle: "Capa 0.12 mm",
+    tiempo: "5 a 10 días",
+    precio: "Cotizar",
+    personalizacion: "Diseño, grabado y empaque"
+  },
+  {
+    categoria: "masoneria",
+    nombre: "Escuadra y compás de escritorio",
+    foto: "",
+    descripcion: "Pieza simbólica de mesa con acabado mate o metalizado, para escritorio o vitrina.",
+    tamano: "15 cm",
+    material: "PLA+",
+    color: "Negro, blanco o dorado",
+    detalle: "Capa 0.12 mm",
+    tiempo: "3 a 6 días",
+    precio: "Cotizar",
+    personalizacion: "Grabado de logia, nombre y grado"
+  },
+  {
+    categoria: "masoneria",
+    nombre: "Piezas simbólicas y de obsequio",
+    foto: "",
+    descripcion: "Mallete, plancha, columnas, portavelas y reconocimientos para ocasiones especiales.",
+    tamano: "Variable",
+    material: "PLA+ o resina",
+    color: "A elegir",
+    detalle: "Capa 0.12 mm",
+    tiempo: "1 a 3 semanas",
+    precio: "Cotizar",
+    personalizacion: "Símbolo, grabado y cantidad"
+  },
+  {
+    categoria: "otros",
+    nombre: "Prototipo para tu negocio",
+    foto: "",
+    descripcion: "Series cortas, muestras, moldes y prototipos funcionales para probar antes de producir.",
+    tamano: "A medida",
+    material: "PLA+, PETG o resina",
+    color: "A elegir",
+    detalle: "Según el uso",
+    tiempo: "Según el proyecto",
+    precio: "Cotizar",
+    personalizacion: "Planos, medidas y materiales"
+  },
+  {
+    categoria: "otros",
+    nombre: "Proyecto especial",
+    foto: "",
+    descripcion: "¿Tienes algo en mente que no encaja en ninguna categoría? Cuéntanos y lo estudiamos.",
+    tamano: "A definir",
+    material: "A definir",
+    color: "A definir",
+    detalle: "A definir",
+    tiempo: "A definir",
+    precio: "Cotizar",
+    personalizacion: "Todo, empezando por la idea"
+  }
+];
+
+/* ╔═══════════════════════════════════════════════════════════════════╗
+   ║  A PARTIR DE AQUÍ ES EL FUNCIONAMIENTO DE LA PÁGINA.             ║
+   ║  No necesitas cambiar nada de lo que sigue.                      ║
+   ╚═══════════════════════════════════════════════════════════════════╝ */
+
+const CATEGORIAS = [
+  { id: "todos",         nombre: "Todo",            icono: "i-otros"   },
+  { id: "figuras",       nombre: "Figuras",         icono: "i-fig"     },
+  { id: "miniaturas",    nombre: "Miniaturas",      icono: "i-mini"    },
+  { id: "dioramas",      nombre: "Dioramas",        icono: "i-dio"     },
+  { id: "para-pintar",   nombre: "Para pintar",     icono: "i-paint"   },
+  { id: "pintadas",      nombre: "Figuras pintadas",icono: "i-painted" },
+  { id: "decoracion",    nombre: "Decoración",      icono: "i-deco"    },
+  { id: "funcionales",   nombre: "Funcionales",     icono: "i-func"    },
+  { id: "personalizados",nombre: "Personalizados",  icono: "i-perso"   },
+  { id: "masoneria",     nombre: "Masonería",       icono: "i-mas"     },
+  { id: "otros",         nombre: "Otros",           icono: "i-otros"   }
+];
+
+const $  = (s, c) => (c || document).querySelector(s);
+const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
+const esc = t => String(t == null ? "" : t).replace(/[&<>"]/g, m => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[m]));
+const listo = v => typeof v === "string" && v.trim() !== "";
+
+/* Enlace de WhatsApp con el mensaje ya escrito */
+function enlaceWa(mensaje) {
+  const texto = encodeURIComponent(mensaje || "Hola, vi su página y quiero información.");
+  return listo(CONFIG.whatsapp)
+    ? "https://wa.me/" + CONFIG.whatsapp.replace(/\D/g, "") + "?text=" + texto
+    : null;
+}
+
+/* Marca */
+$$("[data-cfg='marca']").forEach(el => { if (listo(CONFIG.marca)) el.textContent = CONFIG.marca; });
+$("#anio").textContent = new Date().getFullYear();
+
+/* Botones que abren WhatsApp */
+function conectarWa() {
+  $$("[data-wa]").forEach(el => {
+    const url = enlaceWa(el.dataset.wa);
+    if (url) { el.setAttribute("href", url); el.setAttribute("target", "_blank"); el.setAttribute("rel", "noopener"); }
+    else {
+      el.setAttribute("href", "#cotizacion");
+      if (!$(".pending", el.parentElement || document.body)) {
+        el.insertAdjacentHTML("afterend", ' <span class="pending">Falta configurar el WhatsApp</span>');
+      }
+    }
+  });
+  const flot = $("#floatWa");
+  const url = enlaceWa("Hola, vi su página y quiero cotizar una pieza.");
+  if (url) { flot.href = url; flot.target = "_blank"; flot.rel = "noopener"; }
+}
+
+/* Catálogo */
+function pintarFiltros() {
+  $("#filtros").innerHTML = CATEGORIAS.map((c, i) =>
+    `<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${i === 0}">${esc(c.nombre)}</button>`
+  ).join("");
+  $$("#filtros .chip").forEach(b => b.addEventListener("click", () => {
+    $$("#filtros .chip").forEach(o => o.setAttribute("aria-pressed", String(o === b)));
+    pintarCatalogo(b.dataset.cat);
+  }));
+}
+
+function tarjeta(p) {
+  const cat = CATEGORIAS.find(c => c.id === p.categoria) || CATEGORIAS[CATEGORIAS.length - 1];
+  const imagen = listo(p.foto)
+    ? `<img src="${esc(p.foto)}" alt="${esc(p.nombre)}" loading="lazy">`
+    : `<svg aria-hidden="true"><use href="#${cat.icono}"></use></svg><span class="shot-tag">Aquí va tu fotografía</span>`;
+  const cotiza = !/\d/.test(String(p.precio));
+  const mensaje = `Hola, me interesa: ${p.nombre}. ¿Me podrían dar precio y tiempo de entrega?`;
+  const url = enlaceWa(mensaje);
+  return `
+  <article class="card" data-cat="${esc(p.categoria)}">
+    <div class="shot">${imagen}</div>
+    <div class="card-body">
+      <span class="card-cat">${esc(cat.nombre)}</span>
+      <h3>${esc(p.nombre)}</h3>
+      <p class="desc">${esc(p.descripcion)}</p>
+      <dl class="specs">
+        <dt>Tamaño</dt><dd>${esc(p.tamano)}</dd>
+        <dt>Material</dt><dd>${esc(p.material)}</dd>
+        <dt>Color</dt><dd>${esc(p.color)}</dd>
+        <dt>Detalle</dt><dd>${esc(p.detalle)}</dd>
+        <dt>Entrega</dt><dd>${esc(p.tiempo)}</dd>
+      </dl>
+      <p class="perso"><svg aria-hidden="true"><use href="#i-spark"></use></svg><span>${esc(p.personalizacion)}</span></p>
+      <div class="card-foot">
+        <span class="price ${cotiza ? "quote" : ""}">${esc(p.precio)}</span>
+        <a class="btn btn-primary btn-sm" ${url ? `href="${url}" target="_blank" rel="noopener"` : 'href="#cotizacion"'}>Solicitar</a>
+      </div>
+    </div>
+  </article>`;
+}
+
+function pintarCatalogo(cat) {
+  const lista = (!cat || cat === "todos") ? CATALOGO : CATALOGO.filter(p => p.categoria === cat);
+  $("#catalogoGrid").innerHTML = lista.map(tarjeta).join("");
+  $("#catalogoVacio").hidden = lista.length > 0;
+}
+
+/* Contacto y redes */
+function pintarContacto() {
+  const wa = enlaceWa("Hola, vi su página y quiero información.");
+  const items = [
+    { k: "WhatsApp",  v: listo(CONFIG.whatsapp) ? "Escríbenos ahora" : null, href: wa, ico: "i-wa" },
+    { k: "Instagram", v: listo(CONFIG.instagram) ? CONFIG.instagram.replace(/^https?:\/\/(www\.)?instagram\.com\//, "@").replace(/\/$/, "") : null, href: CONFIG.instagram, ico: "i-ig" },
+    { k: "Facebook",  v: listo(CONFIG.facebook) ? "Nuestra página" : null, href: CONFIG.facebook, ico: "i-fb" },
+    { k: "Correo",    v: listo(CONFIG.correo) ? CONFIG.correo : null, href: listo(CONFIG.correo) ? "mailto:" + CONFIG.correo : "", ico: "i-mail" }
+  ];
+  $("#contactoGrid").innerHTML = items.map(i => {
+    const cuerpo = `<span class="ico"><svg aria-hidden="true"><use href="#${i.ico}"></use></svg></span>
+                    <span class="k">${i.k}</span>
+                    ${i.v ? `<span class="v">${esc(i.v)}</span>` : `<span class="pending">Pendiente de configurar</span>`}`;
+    return i.v
+      ? `<a class="contact-card" href="${esc(i.href)}" target="_blank" rel="noopener">${cuerpo}</a>`
+      : `<div class="contact-card">${cuerpo}</div>`;
+  }).join("");
+
+  const redes = [
+    { href: wa, ico: "i-wa", nombre: "WhatsApp" },
+    { href: listo(CONFIG.instagram) ? CONFIG.instagram : null, ico: "i-ig", nombre: "Instagram" },
+    { href: listo(CONFIG.facebook) ? CONFIG.facebook : null, ico: "i-fb", nombre: "Facebook" },
+    { href: listo(CONFIG.correo) ? "mailto:" + CONFIG.correo : null, ico: "i-mail", nombre: "Correo" }
+  ];
+  $("#socialFooter").innerHTML = redes.map(r =>
+    `<a href="${r.href ? esc(r.href) : "#contacto"}" aria-label="${r.nombre}"${r.href ? ' target="_blank" rel="noopener"' : ""}><svg aria-hidden="true"><use href="#${r.ico}"></use></svg></a>`
+  ).join("");
+
+  const enlacesPie = [];
+  if (listo(CONFIG.instagram)) enlacesPie.push(`<li><a href="${esc(CONFIG.instagram)}" target="_blank" rel="noopener">Instagram</a></li>`);
+  if (listo(CONFIG.facebook))  enlacesPie.push(`<li><a href="${esc(CONFIG.facebook)}" target="_blank" rel="noopener">Facebook</a></li>`);
+  if (wa)                      enlacesPie.push(`<li><a href="${wa}" target="_blank" rel="noopener">WhatsApp</a></li>`);
+  $("#footContacto").insertAdjacentHTML("afterbegin", enlacesPie.join(""));
+}
+
+/* Formulario de cotización */
+function textoCotizacion(f) {
+  const d = Object.fromEntries(new FormData(f).entries());
+  const l = [];
+  l.push("*Solicitud de cotización*");
+  if (d.nombre)      l.push("Nombre: " + d.nombre);
+  if (d.whatsapp)    l.push("WhatsApp: " + d.whatsapp);
+  if (d.correo)      l.push("Correo: " + d.correo);
+  l.push("Quiero fabricar: " + d.que);
+  if (d.descripcion) l.push("Descripción: " + d.descripcion);
+  l.push("Cantidad: " + (d.cantidad || "1"));
+  if (d.tamano)      l.push("Tamaño aproximado: " + d.tamano);
+  l.push("Material: " + d.material);
+  l.push("Pintura: " + d.pintura);
+  l.push("Archivo STL: " + d.stl);
+  l.push("Fotos o referencias: " + d.referencias);
+  if (d.fecha)       l.push("Lo necesito para: " + d.fecha);
+  return l.join("\n");
+}
+
+function conectarFormulario() {
+  const f = $("#formCotizacion"), estado = $("#formEstado");
+  f.addEventListener("submit", e => {
+    e.preventDefault();
+    if (!$("#f-nombre").value.trim()) { estado.textContent = "Escribe tu nombre para continuar."; $("#f-nombre").focus(); return; }
+    const url = enlaceWa(textoCotizacion(f));
+    if (url) { estado.textContent = "Abriendo WhatsApp…"; window.open(url, "_blank", "noopener"); }
+    else {
+      navigator.clipboard?.writeText(textoCotizacion(f));
+      estado.textContent = "Falta configurar el WhatsApp del negocio. Tu solicitud se copió al portapapeles.";
+    }
+  });
+  $("#btnCorreo").addEventListener("click", () => {
+    if (!listo(CONFIG.correo)) { estado.textContent = "Falta configurar el correo del negocio."; return; }
+    const cuerpo = encodeURIComponent(textoCotizacion(f).replace(/\*/g, ""));
+    window.location.href = "mailto:" + CONFIG.correo + "?subject=" + encodeURIComponent("Solicitud de cotización") + "&body=" + cuerpo;
+  });
+}
+
+/* Menú en teléfono */
+function conectarMenu() {
+  const b = $("#navToggle"), n = $("#mainNav");
+  b.addEventListener("click", () => {
+    const abierto = n.classList.toggle("open");
+    b.setAttribute("aria-expanded", String(abierto));
+  });
+  $$("#mainNav a").forEach(a => a.addEventListener("click", () => {
+    n.classList.remove("open"); b.setAttribute("aria-expanded", "false");
+  }));
+}
+
+/* Ventanas legales */
+const TEXTOS = {
+  privacidad: {
+    titulo: "Aviso de privacidad",
+    cuerpo: `<p><b>${esc(CONFIG.marca)}</b>, con domicilio en ${esc(CONFIG.ciudad)}, es responsable del tratamiento de los datos personales que usted proporciona a través de esta página.</p>
+    <p style="margin-top:12px"><b>¿Qué datos recabamos?</b> Únicamente los que usted escribe voluntariamente en el formulario de cotización o nos envía por WhatsApp, Instagram, Facebook o correo: nombre, teléfono, correo electrónico y la descripción, imágenes o archivos de la pieza que desea fabricar.</p>
+    <p style="margin-top:12px"><b>¿Para qué los usamos?</b> Exclusivamente para elaborar su cotización, dar seguimiento a su pedido, fabricar la pieza solicitada y coordinar la entrega. No vendemos ni compartimos sus datos con terceros, salvo la información mínima necesaria para el servicio de paquetería cuando usted solicita un envío.</p>
+    <p style="margin-top:12px"><b>Imágenes y archivos.</b> Las fotografías, bocetos y archivos que usted nos envía se utilizan solo para fabricar su pieza. No publicamos imágenes de piezas personalizadas sin su autorización expresa.</p>
+    <p style="margin-top:12px"><b>Sus derechos.</b> Puede solicitar en cualquier momento el acceso, rectificación, cancelación u oposición al tratamiento de sus datos (derechos ARCO) escribiéndonos por los medios de contacto de esta página.</p>
+    <p style="margin-top:12px;color:var(--muted);font-size:.85rem">Última actualización: revise y ajuste este texto con sus datos reales antes de publicar la página.</p>`
+  },
+  terminos: {
+    titulo: "Términos y condiciones",
+    cuerpo: `<p><b>1. Cotizaciones.</b> Toda cotización es informativa hasta que se confirma por escrito. El precio final depende del material, tamaño, tiempo de impresión, complejidad y acabado solicitados.</p>
+    <p style="margin-top:12px"><b>2. Anticipo.</b> Los trabajos personalizados requieren un anticipo para iniciar el diseño o la impresión. El resto se liquida antes de la entrega o el envío.</p>
+    <p style="margin-top:12px"><b>3. Tiempos de entrega.</b> Los plazos indicados son estimados y comienzan a correr una vez confirmado el diseño y recibido el anticipo. Pueden variar por volumen de trabajo o por cambios solicitados durante el proceso.</p>
+    <p style="margin-top:12px"><b>4. Piezas personalizadas.</b> Por tratarse de productos hechos a la medida, no se aceptan cancelaciones ni devoluciones una vez iniciada la fabricación, salvo defecto atribuible al taller.</p>
+    <p style="margin-top:12px"><b>5. Naturaleza de la impresión 3D.</b> Las piezas pueden presentar líneas de capa visibles, marcas leves de soporte y pequeñas variaciones de tono entre lotes. Esto es propio del proceso y no se considera defecto.</p>
+    <p style="margin-top:12px"><b>6. Archivos del cliente.</b> Al enviarnos un archivo, usted declara contar con los derechos necesarios para reproducirlo. No fabricamos piezas que infrinjan derechos de terceros ni objetos prohibidos por la ley.</p>
+    <p style="margin-top:12px"><b>7. Envíos.</b> El costo de envío corre por cuenta del cliente. Una vez entregado el paquete a la paquetería, los tiempos y eventualidades del traslado dependen de dicha empresa.</p>
+    <p style="margin-top:12px;color:var(--muted);font-size:.85rem">Este texto es un punto de partida. Ajústelo a sus condiciones reales de trabajo antes de publicar la página.</p>`
+  }
+};
+
+function conectarModales() {
+  const ov = $("#overlay");
+  const abrir = clave => {
+    const t = TEXTOS[clave]; if (!t) return;
+    $("#modalTitulo").textContent = t.titulo;
+    $("#modalCuerpo").innerHTML = t.cuerpo;
+    ov.hidden = false;
+    $("#modalCerrar").focus();
+  };
+  const cerrar = () => { ov.hidden = true; };
+  $$("[data-modal]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); abrir(a.dataset.modal); }));
+  $("#modalCerrar").addEventListener("click", cerrar);
+  ov.addEventListener("click", e => { if (e.target === ov) cerrar(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !ov.hidden) cerrar(); });
+}
+
+/* Arranque */
+pintarFiltros();
+pintarCatalogo("todos");
+pintarContacto();
+conectarWa();
+conectarFormulario();
+conectarMenu();
+conectarModales();
+</script>
+
+</body>
+</html>
